@@ -1,0 +1,43 @@
+CARACTERES
+
+Um caracter é uma letra, dígito ou qualquer símbolo que possa ser
+representado no computador, incluindo o espaço (' '). O nome do tipo é
+"char", e pode ser declarado e inicializado da mesma forma que outros
+tipos:
+
+  char c, d = 'A';
+  c = '7';
+
+Note que um caracter constante é um único caracter delimitado por
+haspas simples. Todos os caracteres exceto a própria haspas simples e
+'\' podem ser usados diretamente como um caracter constante. Os dois
+caracteres especiais citados têm que usar uma sequência especial, que
+inclúi outras possibilidades:
+
+  barra invertida -> \\
+  haspas simples  -> \'
+  fim de linha    -> \n
+  tabulação       -> \t
+
+  char haspas_simples = '\'';
+  char barra = '\\';
+
+Os métodos para trabalhar com caracteres fazem parte de um conjunto
+chamado "Character", e podem ser utilizados como se segue:
+
+<boolean> <- Character.isDigit(<char>)       // Testa se o caracter 
+                                             // é um dígito de 0 a 9
+<boolean> <- Character.isLetter(<char>)      // Testa se o caracter 
+                                             // é uma letra (A-Z ou a-z)
+<boolean> <- Character.isLowerCase(<char>)   // Testa se o caracter 
+                                             // é uma letra minúscula
+<boolean> <- Character.isUpperCase(<char>)   // Testa se o caracter 
+                                             // é uma letra maiúscula
+<boolean> <- Character.isWhitespace(<char>)  // Testa se o caracter 
+                                             // é um espaço (' ', '\t' ou '\n')
+<char>    <- Character.toLowerCase(<char>)   // Converte o caracter 
+                                             // para minúscula
+<char>    <- Character.toUpperCase(<char>)   // Converte o caracter 
+                                             // para maiúscula
+<String>  <- Character.toString(<char>)      // Converte o caracter 
+                                             // para uma string

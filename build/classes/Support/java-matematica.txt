@@ -1,0 +1,25 @@
+Aqui está uma lista de constantes e métodos matemáticos de Java:
+
+CONSTANTES
+
+(double) Math.E   // base dos logarítmos
+(double) Math.PI  // constante PI
+
+MÉTODOS
+
+<double> <- Math.abs(<double>)            // retorna o valor absoluto de um real
+<int>    <- Math.abs(<int>)               // retorna o valor absoluto de um inteiro
+<double> <- Math.ceil(<double>)           // retorna o valor truncado para cima
+<double> <- Math.cos(<double>)            // retorna o cosseno de um ângulo em radianos
+<double> <- Math.exp(<double>)            // retorna um número elevado a E
+<double> <- Math.floor(<double>)          // retorna o valor truncado para baixo
+<double> <- Math.log(<double>)            // retorna o logaritmo na base E
+<int>    <- Math.max(<int>, <int>)        // retorna o maior valor entre dois inteiros
+<double> <- Math.max(<double>, <double>)  // retorna o maior valor entre dois reais
+<int>    <- Math.min(<int>, <int>)        // retorna o menor valor entre dois inteiros
+<double> <- Math.min(<double>, <double>)  // retorna o menor valor entre dois reais
+<double> <- Math.pow(<double>, <double>)  // retorna o primeiro valor elevado ao segundo
+<double> <- Math.random()                 // retorna um valor aleatório no intervalo [0,1)
+<double> <- Math.sin(<double>)            // retorna o seno de um ângulo em radianos
+<double> <- Math.sqrt(<double>)           // retorna a raiz quadrada
+<double> <- Math.tan(<double>)            // retorna a tangente de um ângulo em radianos

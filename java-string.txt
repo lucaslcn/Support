@@ -1,0 +1,56 @@
+STRINGS
+
+Uma string é uma sequência de caracteres que pode ter tamanho
+variável, ou ser vazia. O nome do tipo é "String", com "S" maíusculo,
+e pode ser declarada e inicializada da mesma forma que outros tipos:
+
+  String a, b = "teste";
+  a = "olá";
+
+Note que uma string constante é um conjunto de caracteres delimitado
+por haspas duplas. Todos os caracteres exceto haspas duplas e '\'
+podem ser usados diretamente em uma string constante. Os dois
+caracteres especiais citados tem que usar uma sequência especial, que
+inclúi outras possibilidades:
+
+  barra invertida -> \\
+  haspas dupla    -> \"
+  fim de linha    -> \n
+  tabulação       -> \t
+
+  String s = "Os caracteres especiais são \" e \\, dentro de uma string.";
+
+As operações sobre uma string devem ser chamadas com uma notação
+especial, colocando primeiro uma variável do tipo "String", depois um
+ponto ('.') e então o nome da função com zero ou mais parâmetros entre
+parênteses. Nos exemplos abaixo usa-se a variável "s":
+
+<boolean> <- s.equals(<string>)        // Compara "s" com a string especificada
+<int>     <- s.length()                // Devolve o comprimento da string "s"
+<char>    <- s.charAt(<int>)           // Devolve o caracter de "s" na posição
+                                       // especificada (um índice inteiro)
+<int>     <- s.indexOf(<String>)       // Devolve a posição em que a string
+                                       // especificada ocorre dentro de "s", ou
+                                       // -1 se não ocorrer
+<int>     <- s.indexOf(<String>,<int>) // Devolve a posição em que a string
+                                       // especificada ocorre dentro de "s", ou
+                                       // -1 se não ocorrer, a partir da posição
+                                       // indicada
+<String>  <- s.substring(<int>)        // Devolve uma string que é a parte de "s"
+                                       // que começa a partir do índice especificado
+                                       // e continuando até o final de "s"
+<String>  <- s.substring(<int>,<int>)  // Devolve uma string que é a parte de "s"
+                                       // que começa no primeiro índice especificado
+                                       // e que vai até antes do segundo índice (ou seja,
+                                       // não incluindo o caracter desta posição)
+<String>  <- s.toLowerCase()           // Devolve a string "s" convertida para
+                                       // minúsculas
+<String>  <- s.toUpperCase()           // Devolve a string "s" convertida para
+                                       // maiúsculas
+<int>     <- s.compareTo(<string>)     // Compara a string "s" com a string
+                                       // especificada
+
+Note que função "s1.compareTo(s2)" retorna um valor inteiro, que é
+igual a zero se as strings "s1" e "s2" são iguais, negativo se "s1"
+vem antes de "s2" e positivo se "s1" vem depois de "s2" na ordem
+alfabética.
